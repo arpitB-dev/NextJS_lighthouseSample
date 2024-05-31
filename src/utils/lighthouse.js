@@ -1,7 +1,6 @@
 import lighthouse from "@lighthouse-web3/sdk";
 import kavach from "@lighthouse-web3/kavach";
 const apiKey = process.env.NEXT_PUBLIC_LIGHTHOUSE_API_KEY;
-const walletPrivateKey = process.env.NEXT_PUBLIC_LIGHTHOUSE_API_KEY;
 
 export const getUploads = async () => {
   const response = await lighthouse.getUploads(apiKey);
